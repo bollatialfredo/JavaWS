@@ -1,0 +1,32 @@
+import java.util.Iterator;
+import java.util.*;
+
+public class Vocabulario implements Iterable<String> {
+
+	private List<String> palabras;
+	private Map<String, Integer> mapa = new HashMap<String, Integer>();
+	private String texto;
+	private Iterator it;
+	
+	public Vocabulario(String text){
+		String[] t = text.split(" ");
+		for (String pal : t) {
+			if (mapa.containsKey(pal)) {
+				mapa.put(pal, mapa.get(pal)+1);
+			}else{
+				mapa.put(pal, 1);
+			}
+		}
+	}
+	
+	
+	@Override
+	public Iterator<String> iterator() {
+		if (it!=null) {
+			return it;
+		}else{
+			return new IteradorAlfabet(mapa.keySet());
+		}
+	}
+	
+}

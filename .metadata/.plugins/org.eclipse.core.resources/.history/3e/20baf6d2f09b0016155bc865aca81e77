@@ -1,0 +1,16 @@
+
+public class Computadora {
+	int velocidad;
+	
+	public Computadora (int vel) {
+		velocidad = vel;
+	}
+
+	public int getVelocidad() {
+		return velocidad;
+	}
+
+	public void setVelocidad(int velocidad) {
+		this.velocidad = velocidad;
+	}
+}

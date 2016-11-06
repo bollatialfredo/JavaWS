@@ -1,0 +1,30 @@
+import java.util.*;
+
+public class Pila {
+	
+	private Set<String> pila = new HashSet<String>();
+	
+	public Pila(String a, String b, String c){
+		pila.add(a);
+		pila.add(b);
+		pila.add(c);
+	}
+	
+	public String top(){
+		
+		Iterator<String> it = pila.iterator();
+		String aux = "";
+		while (it.hasNext()){
+			aux = it.next();
+		}
+		return aux;
+	}
+	
+	public static void main(String[] args) {
+		Pila p = new Pila("lala", "lolo", "como salio boquita?");
+		System.out.println(p.top());
+		System.out.println(p.top());
+		System.out.println(p.top());
+	}
+	
+}

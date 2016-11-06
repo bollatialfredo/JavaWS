@@ -1,0 +1,27 @@
+import java.util.*;
+
+public class Biblioteca {
+	private List<Libro> libros;
+	
+	public Biblioteca () {
+		libros = new ArrayList<Libro>();
+	}
+	
+	public List<Libro> ordenar () {
+		List<Libro> listaOrdenada = new ArrayList<Libro>();
+		
+		Collections.sort(libros, new Comparator<Libro>() {
+
+			@Override
+			public int compare(Libro a, Libro b) {
+				return a.getNombre().compareTo(b.getNombre());
+			}
+			
+		});
+		return libros;
+	}
+	
+	public void agregarLibro (Libro l) {
+		libros.add(l);
+	}
+}

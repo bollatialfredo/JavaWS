@@ -1,0 +1,22 @@
+import java.util.*;
+
+public class CentroComputos {
+	private ColaOrdenada procesos;
+	private ColaOrdenada pcs;
+	
+	public CentroComputos () {
+		procesos = new ColaOrdenada();
+		pcs = new ColaOrdenada();
+	}
+	
+	public void addProceso (Proceso p) {
+		if (!pcs.vacia()){
+			
+		}
+		
+	}
+	
+	public void addComputadora (Computadora c) {
+		pcs.add(c);
+	}
+}

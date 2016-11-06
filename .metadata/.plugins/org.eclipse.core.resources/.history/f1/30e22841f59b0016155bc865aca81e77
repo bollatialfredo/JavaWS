@@ -1,0 +1,17 @@
+
+public class Main {
+	public static void main(String[] args) {
+		CentroComputo centro = new CentroComputo();
+		
+		Proceso p1 = new Proceso(10);
+		Proceso p3 = new Proceso(30);
+		Proceso p2 = new Proceso(20);
+		
+		Computadora c1 = new Computadora(5);
+		Computadora c2 = new Computadora(25);
+		
+		centro.addProceso(p1);
+		centro.addProceso(p2);
+		centro.addProceso(p3);
+	}
+}

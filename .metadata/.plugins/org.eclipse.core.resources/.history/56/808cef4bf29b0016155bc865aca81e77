@@ -1,0 +1,21 @@
+import java.util.*;
+
+public class ColaOrdenada {
+	List<Comparable> cola = new ArrayList<Comparable>();
+	
+	public ColaOrdenada(){
+		
+	}
+	
+	public void add(Comparable oC){
+		cola.add(oC);
+		Collections.sort(cola);
+	}
+	
+	public Comparable get(){
+		if(!cola.isEmpty()){
+			return cola.get(cola.size()-1);
+		}
+		return null;
+	}
+}

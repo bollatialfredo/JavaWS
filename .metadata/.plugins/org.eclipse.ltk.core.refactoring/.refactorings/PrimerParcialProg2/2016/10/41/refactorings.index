@@ -1,0 +1,5 @@
+1475768747945	Rename type 'ClienteEspecial'
+1475768762255	Rename type 'ClienteExigente'
+1475768809608	Rename type 'Status'
+1475768833284	Rename method 'getDescuento'
+1475769012022	Rename method 'tenesEsteGenero'

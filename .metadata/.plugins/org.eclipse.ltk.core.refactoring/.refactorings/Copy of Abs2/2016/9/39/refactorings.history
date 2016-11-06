@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename method &apos;Evaluador2.comparaPalClave(...)&apos; to &apos;contienePalabra&apos;&#x0D;&#x0A;- Original project: &apos;Copy of Abs2&apos;&#x0D;&#x0A;- Original element: &apos;Evaluador2.comparaPalClave(...)&apos;&#x0D;&#x0A;- Renamed element: &apos;Evaluador2.contienePalabra(...)&apos;&#x0D;&#x0A;- Update references to refactored element" delegate="false" deprecate="false" description="Rename method &apos;comparaPalClave&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.method" input="/src&lt;{Evaluador2.java[Evaluador2~comparaPalClave~QString;" name="contienePalabra" references="true" stamp="1474586575805" version="1.0"/>
+</session>

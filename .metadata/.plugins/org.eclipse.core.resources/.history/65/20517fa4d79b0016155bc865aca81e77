@@ -1,0 +1,85 @@
+import java.util.*;
+
+public class Playlist extends PLFE {
+
+	String nombre;
+	Vector <PLFE> elem;
+
+	public Playlist(String n){
+		nombre = n;
+		elem = new Vector<PLFE>();
+	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		return nombre.equals(((Playlist)obj).getNombre());
+	}
+
+	public void addElem(PLFE p){
+		elem.addElement(p);
+	}
+
+	private int buscarPosElem(PLFE e){
+		for (int i = 0; i < elem.size(); i++) {
+			if (e.equals(elem.elementAt(i))) {
+				return i;
+			}
+		}
+		return -1;
+	}
+
+	public void deleteElem(PLFE r){
+		int pos = buscarPosElem(r);
+		if (pos!=-1) {
+			elem.removeElementAt(pos);
+		}
+	}
+
+	public void intercambiarElementos(PLFE primero, PLFE segundo){
+		int pos1 = buscarPosElem(primero);
+		int pos2 = buscarPosElem(segundo);
+		if (pos1 != -1 && pos2 != -1) {
+			Collections.swap(elem, pos1, pos2);
+
+		}
+	}
+
+	public int duracion() {
+		int cuentaSeg = 0;
+		for (int i = 0; i < elem.size(); i++) {
+			cuentaSeg = cuentaSeg + elem.elementAt(i).duracion();
+		}
+		return cuentaSeg;
+	}
+
+	public int cantPistas() {
+		int cantPistas = 0;
+		for (int i = 0; i < elem.size(); i++) {
+			cantPistas = cantPistas + elem.elementAt(i).cantPistas();
+		}
+		return cantPistas;
+	}
+
+	public String toString(){
+		String mensaje = "Playlist: "+nombre+" \n";
+		for (int i = 0; i < elem.size(); i++) {
+			mensaje = mensaje +" "+ elem.elementAt(i).toString();
+		}
+		return mensaje+"\n";
+	}
+	
+	@Override
+	public Vector<PLFE> buscar(Condicion c) {
+		Vector<PLFE> aux = new Vector<PLFE>();
+
+		for (int i = 0; i <elem.size(); i++) {
+			Vector<PLFE> elemento = elem.elementAt(i).buscar(c);
+			aux.addAll(elemento);
+		}
+		return aux;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+}

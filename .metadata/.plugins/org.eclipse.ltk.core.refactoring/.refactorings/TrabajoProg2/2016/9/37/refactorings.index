@@ -1,0 +1,5 @@
+1473072828405	Rename type 'EFS'
+1473121087744	Rename type 'PLFS'
+1473189246299	Rename method 'cantPistas'
+1473189292816	Rename method 'cantPistas2'
+1473260455313	Encapsulate field 'nombre'

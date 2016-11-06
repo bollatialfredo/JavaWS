@@ -1,0 +1,21 @@
+import java.util.*;
+public class Directorio extends EFS {
+	private List<EFS>lista;
+	private String nombre;
+	
+	public Directorio(String nomb,int size){
+		super(nomb,size);
+		lista=new ArrayList();
+	}
+	
+	public String getNombre(){
+		return nombre;
+	}
+	
+	public List<EFS> getLista(){
+		return lista;
+	}
+	
+	
+
+}

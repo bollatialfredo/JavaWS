@@ -1,0 +1,15 @@
+import java.util.*;
+
+public class Link {
+	private EFS link;
+	
+	public Link(EFS efs){
+		
+		link=efs;		
+	}
+	
+	public EFS getLink(){
+		return link;
+	}
+
+}

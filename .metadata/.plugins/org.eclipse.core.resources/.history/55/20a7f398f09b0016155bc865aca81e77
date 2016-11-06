@@ -1,0 +1,16 @@
+
+public class Proceso {
+	int memoria;
+	
+	public Proceso (int mem) {
+		memoria = mem;
+	}
+
+	public int getMemoria() {
+		return memoria;
+	}
+
+	public void setMemoria(int memoria) {
+		this.memoria = memoria;
+	}
+}

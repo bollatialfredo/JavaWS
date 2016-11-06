@@ -1,0 +1,17 @@
+import java.util.*;
+
+public class CentroComputos {
+	private List<Proceso> procesos;
+	private List<Computadora> pcs;
+	
+	public CentroComputos () {
+		procesos = new ArrayList<Proceso>();
+		pcs = new ArrayList<Computadora>();
+	}
+	
+	public void addProceso (Proceso p) {
+		procesos.add(p);
+	}
+	
+	public void addComputadora
+}

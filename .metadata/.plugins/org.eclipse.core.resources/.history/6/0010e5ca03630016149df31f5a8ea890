@@ -1,0 +1,11 @@
+public class Persona {
+	
+	private String nombre = "N";
+	private String apellido = "N";
+	private int DNI;
+	private char sexo = 'f';
+	private float peso = 1;
+	private float altura = 1;
+	
+	
+}

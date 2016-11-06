@@ -1,0 +1,28 @@
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+public class Juego {
+	Pila mazo = new Pila();
+	Map<String, Integer> jugador = new LinkedHashMap<String, Integer>();
+		
+	
+	public Juego(){
+		for (int i = 0; i < 41; i++) {
+			mazo.push((int)Math.floor(Math.random())*10+1);
+		}
+		jugador.put("jugador1", 0);
+		jugador.put("jugador2", 0);
+	}
+	
+	public void mano(){
+		int jug1 = (int)mazo.pop() +(int)mazo.pop();
+		int jug2 = (int)mazo.pop() +(int)mazo.pop();
+		
+		if (jug1>jug2) {
+			jugador.put("jugador1", jug1+jug2);
+		}
+	}
+	
+	
+	
+}
