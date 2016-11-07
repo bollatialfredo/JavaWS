@@ -1,8 +1,0 @@
-
-public class Computadora {
-	int velocidad;
-	
-	public Computadora (int vel) {
-		velocidad = vel;
-	}
-}

@@ -1,0 +1,19 @@
+
+public abstract class Recurso {
+	String nombre;
+	
+	public abstract boolean esPosibleAgregar(ELMTarea t);
+	
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj ) {
+			return true;
+		}else{
+			return nombre.equals(((Recurso)obj).getNombre());
+		}
+	}
+	
+	public String getNombre(){
+		return nombre;
+	}
+}

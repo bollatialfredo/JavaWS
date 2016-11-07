@@ -1,0 +1,34 @@
+import java.util.*;
+
+public class TareaTerminal extends ELMTarea {
+	
+	private Set<Recurso> setR = new HashSet<Recurso>();
+	
+	public TareaTerminal(){
+		
+	}
+	
+	public boolean tieneRecurso(Recurso r){
+		return setR.contains(r);
+	}
+	
+	public boolean addRecurso(Recurso r){
+		return setR.add(r);
+	}
+	
+	@Override
+	public int estado() {
+		return estado;
+	}
+
+	@Override
+	public List<Recurso> getRecursos() {
+		return new ArrayList<Recurso>(setR);
+	}
+
+	@Override
+	public int fechaInicio() {
+		return 0;
+	}
+
+}

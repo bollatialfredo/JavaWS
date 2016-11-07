@@ -1,0 +1,13 @@
+import java.util.*;
+
+public abstract class ELMTarea {
+	int estado;
+	int fechaInicio;
+	int fechaFin;
+	int fechaInicioEst;
+	int fechaFinEst;
+	
+	public abstract int estado();
+	public abstract List<Recurso> getRecursos();
+	public abstract int fechaInicio();
+}

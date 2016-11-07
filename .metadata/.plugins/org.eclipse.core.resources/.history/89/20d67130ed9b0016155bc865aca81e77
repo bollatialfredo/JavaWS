@@ -1,8 +1,0 @@
-
-public class Proceso {
-	int memoria;
-	
-	public Proceso (int mem) {
-		memoria = mem;
-	}
-}

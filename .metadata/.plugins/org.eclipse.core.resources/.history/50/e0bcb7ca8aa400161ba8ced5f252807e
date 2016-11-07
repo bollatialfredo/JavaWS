@@ -1,0 +1,13 @@
+import java.util.*;
+
+public class WBS {
+	List<ELMTarea> lista = new ArrayList<ELMTarea>();
+	
+	public void addTarea(ELMTarea t){
+		lista.add(t);
+	}
+	public List<Recurso> recursosPorUnaTarea(ELMTarea t){
+		return new ArrayList<Recurso>(t.getRecursos());
+		
+	}
+}

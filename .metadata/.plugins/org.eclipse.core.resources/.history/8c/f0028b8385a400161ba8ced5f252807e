@@ -1,0 +1,8 @@
+
+public abstract class Recurso {
+	String nombre;
+	
+	public abstract boolean disponible();
+	
+	
+}

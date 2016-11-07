@@ -1,0 +1,8 @@
+
+public class Sim {
+
+	public static void main(String[] args) {
+		ELMTarea t1 = new TareaTerminal();
+	}
+
+}
