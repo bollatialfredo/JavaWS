@@ -1,0 +1,20 @@
+import java.util.HashMap;
+import java.util.Map;
+import java.security.KeyStore.Entry;
+import java.util.*;
+
+public class Vocabull implements Iterable{
+	Map<String,Integer>palabras=new HashMap<String,Integer>();
+	Iterator it;
+	
+	public Vocabull(String texto){
+		String[] pals=texto.split(" ");
+		for (int i = 0; i < pals.length; i++) {
+			if(palabras.containsKey(pals[i]))
+				palabras.put(pals[i], palabras.get(pals[i])+1);
+			else
+				palabras.put(pals[i],new Integer(1));
+		}
+	}
+
+}

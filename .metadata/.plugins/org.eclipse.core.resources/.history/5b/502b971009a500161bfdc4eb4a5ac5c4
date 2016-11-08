@@ -1,0 +1,12 @@
+import java.util.HashMap;
+import java.util.Map;
+
+public class Vocabull {
+	Map<String,Integer>palabras=new HashMap<String,Integer>();
+	
+	public Vocabull(String texto){
+		List<String> pals=new ArrayList();
+		texto.split(" ");
+	}
+
+}

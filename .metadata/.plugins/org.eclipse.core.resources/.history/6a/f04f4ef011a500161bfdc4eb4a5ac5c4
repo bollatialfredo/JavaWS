@@ -1,0 +1,16 @@
+import java.util.*;
+public class Libro {
+	String nombre;
+	int isbc;
+	String autor;
+	
+	public Libro(String nomb,int is,String aut){
+		nombre=nomb;
+		isbc=is;
+		autor=aut;
+	}
+	
+	
+	
+
+}

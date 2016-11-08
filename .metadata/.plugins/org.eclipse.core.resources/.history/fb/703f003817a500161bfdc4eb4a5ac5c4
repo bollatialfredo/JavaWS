@@ -1,0 +1,4 @@
+
+public class ComparadorPorAutor implements Comparator<Litro> {
+
+}

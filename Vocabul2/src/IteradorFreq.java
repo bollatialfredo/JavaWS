@@ -1,7 +1,7 @@
 import java.util.*;
 import java.util.Map.Entry;
 
-public class IteradorFreq implements Iterator<Entry<String, Integer>> {
+public class IteradorFreq implements Iterator<String> {
 	
 	private List<Entry<String, Integer>> lista;
 	private int pos = 0;

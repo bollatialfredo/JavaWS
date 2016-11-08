@@ -1,0 +1,22 @@
+import java.util.*;
+
+public class Biblioteca {
+	List<Libro>libros;
+	
+	public Biblioteca(){
+		libros=new ArrayList<Libro>();		
+	}
+	
+	public void addLibro(Libro l){
+		libros.add(l);
+	}
+	
+	public List<Libro> OrdenarIsbn(){
+		Collections.sort(libros, new Comparator<Integer>()(
+				);
+	}
+	
+	
+	
+
+}

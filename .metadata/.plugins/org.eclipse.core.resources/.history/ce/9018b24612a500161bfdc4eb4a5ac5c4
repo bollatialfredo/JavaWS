@@ -1,0 +1,17 @@
+import java.util.*;
+
+public class Biblioteca {
+	List<Libro>libros=new ArrayList<Libro>();
+	
+	public Biblioteca(){
+		
+	}
+	
+	public void addLibro(Libro l){
+		libros.add(lib);
+	}
+	
+	
+	
+
+}

@@ -1,0 +1,31 @@
+import java.util.*;
+
+public class Biblioteca {
+	List<Libro>libros;
+	Comparator comparador=new Comparator<Libro>(){
+		public int compare(Libro l1,Libro l2){
+			return l1.getIsbn()-l2.getIsbn();
+		}
+	
+	public Biblioteca(){
+		libros=new ArrayList<Libro>();		
+	}
+	
+	public void addLibro(Libro l){
+		libros.add(l);
+	}
+	
+	public List<Libro> OrdenarIsbn(){
+		List<Libro>libs=new ArrayList<Libro>(libros);
+		Collections.sort(libs, 
+			
+		});
+		return libs;
+	}
+	
+	public List<Libro> Ordenar(Comparator<Libro>){
+		
+	}
+	
+
+}

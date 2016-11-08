@@ -1,0 +1,8 @@
+
+public class Comparadorporisbn {
+	
+		public int compare(Libro l1,Libro l2){
+			return l1.getIsbn()-l2.getIsbn();
+		}
+
+}
