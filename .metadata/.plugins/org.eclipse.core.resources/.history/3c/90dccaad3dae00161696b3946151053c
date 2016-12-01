@@ -1,0 +1,11 @@
+import java.util.Collections;
+import java.util.Iterator;
+
+public class IteradorDescendente extends IteradorNodo implements Iterator<Comparable> {
+
+	public IteradorDescendente(Nodo n){
+		lista.addAll(n.getValores());
+		Collections.reverse(list);
+	}
+	
+}

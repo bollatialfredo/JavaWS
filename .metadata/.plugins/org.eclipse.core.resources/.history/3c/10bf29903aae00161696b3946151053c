@@ -1,0 +1,25 @@
+import java.util.Iterator;
+import java.util.List;
+
+public class IteradorAscendente implements Iterator<Comparable>{
+	private List<Comparable> lista;
+	private int pos;
+	
+	public IteradorAscendente(Nodo no){
+		if(no.getValores()!=null){
+			lista.addAll(no.getValores());
+		}
+	}
+
+	@Override
+	public boolean hasNext() {
+		return pos < lista.size();
+	}
+
+	@Override
+	public Comparable next() {
+		Comparable c = lista.get(pos);
+		pos++;
+		return c;
+	}
+}

@@ -1,4 +1,0 @@
-import java.util.Comparator;
-public class ComparadorPorNombre implements Comparator<Libro> {
-
-}

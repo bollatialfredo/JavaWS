@@ -1,0 +1,16 @@
+
+public class main {
+	public static void main(String[] args) {
+		
+		String a="alberto";
+		String b="bautista";
+		String c="clarita";
+		String d="diego";
+		
+		Nodo n1=new Nodo(a);
+		n1.AddNodo(b);
+		n1.AddNodo(c);
+		n1.AddNodo(d);
+	}
+
+}

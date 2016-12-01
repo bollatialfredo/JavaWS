@@ -1,6 +1,0 @@
-import java.util.Map;
-
-public class Vocabull {
-	Map<String,Integer>palabras=new hashMap<String,Integer>();
-
-}

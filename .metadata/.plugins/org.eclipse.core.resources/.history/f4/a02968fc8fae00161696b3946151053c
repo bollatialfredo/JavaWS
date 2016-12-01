@@ -1,0 +1,7 @@
+
+public class Alumno {
+	private String Nombre;
+	private int notafinal;
+	private int edad;
+
+}

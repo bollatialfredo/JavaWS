@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename field &apos;obj&apos; in &apos;nodoParcial.Nodo&apos; to &apos;cmp&apos;&#x0D;&#x0A;- Original project: &apos;nodoParcial&apos;&#x0D;&#x0A;- Original element: &apos;nodoParcial.Nodo.obj&apos;&#x0D;&#x0A;- Renamed element: &apos;nodoParcial.Nodo.cmp&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" delegate="false" deprecate="false" description="Rename field &apos;obj&apos;" flags="589826" getter="false" id="org.eclipse.jdt.ui.rename.field" input="/src&lt;nodoParcial{Nodo.java[Nodo^obj" name="cmp" references="true" setter="false" stamp="1478709450904" textual="false" version="1.0"/>
+</session>

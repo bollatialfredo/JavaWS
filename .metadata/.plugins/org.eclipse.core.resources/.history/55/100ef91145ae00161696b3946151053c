@@ -1,0 +1,63 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class Nodo {
+	
+	private Nodo nodoDer;
+	private Nodo nodoIzq;
+	private Comparable c;
+	
+	public Nodo(Comparable co){
+		c = co;
+	}
+	
+	public void add(Comparable co){
+		if(c.compareTo(co)>= 0){
+			if(nodoIzq != null)
+				nodoIzq.add(co);
+			else
+				nodoIzq = new Nodo(co);	
+		}else{
+			if(nodoDer != null)
+				nodoDer.add(co);
+			else
+				nodoDer = new Nodo(co);
+		}
+	}
+	
+	public List<Comparable> getValoresIzq(){
+		List<Comparable> lista = new ArrayList<Comparable>();
+		if(nodoIzq!=null){
+			lista.addAll(nodoIzq.getValoresIzq());
+		}
+//		lista.add(c);
+//		if(nodoDer != null){
+//			lista.addAll(nodoDer.getValores());
+//		}
+		return lista;
+	}
+	
+	public List<Comparable> getValoresDer(){
+		List<Comparable> lista = new ArrayList<Comparable>();
+//		if(nodoIzq!=null){
+//			lista.addAll(nodoIzq.getValores());
+//		}
+//		lista.add(c);
+		if(nodoDer != null){
+			lista.addAll(nodoDer.getValoresDer());
+		}
+		return lista;
+	}
+	
+	public List<Comparable> getValores(){
+		List<Comparable> lista = new ArrayList<Comparable>();
+		if(nodoIzq!=null){
+			lista.addAll(nodoIzq.getValores());
+		}
+		lista.add(c);
+		if(nodoDer != null){
+			lista.addAll(nodoDer.getValores());
+		}
+		return lista;
+	}	
+}

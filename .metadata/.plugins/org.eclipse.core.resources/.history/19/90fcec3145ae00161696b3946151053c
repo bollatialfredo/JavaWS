@@ -1,0 +1,13 @@
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class IteradorDescendente extends IteradorNodo {
+
+	public IteradorDescendente(Nodo n){
+		lista = new ArrayList<Comparable>();
+		lista.addAll(n.getValoresDer());
+		lista.add(n.getValor());
+		lista.addAll(n.getValoresIzq());
+	}
+	
+}

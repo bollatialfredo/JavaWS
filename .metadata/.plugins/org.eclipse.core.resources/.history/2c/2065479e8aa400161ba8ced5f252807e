@@ -1,7 +1,0 @@
-import java.util.*;
-
-public class WBS {
-	List<ELMTarea> lista = new ArrayList<ELMTarea>();
-	
-	
-}

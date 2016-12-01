@@ -1,0 +1,14 @@
+
+public class sim {
+	public static void main(String[] args) {
+		Nodo n1 = new Nodo("era");
+		n1.add("zzz");
+		n1.add("aaaa");
+		n1.add("parcial Prog");
+		n1.add("las tarlipes");
+		n1.add("facil");
+		IteradorNodo it = new IteradorNodo(n1);
+		
+		System.out.println(n1.toString());
+	}
+}

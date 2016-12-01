@@ -1,0 +1,23 @@
+package nodoParcial;
+
+import java.util.Iterator;
+import java.util.*;
+
+public class IteradorNodo implements Iterator<Comparable> {
+	Nodo nodo;
+	
+	public IteradorNodo(Nodo n){
+		nodo = n;
+	}
+	
+	@Override
+	public boolean hasNext() {
+		return nodo.haySiguiente();
+	}
+
+	@Override
+	public Comparable next() {
+		return nodo.nodoSig.value();
+	}
+
+}

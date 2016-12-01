@@ -1,0 +1,25 @@
+
+
+public class Alumno implements Comparable<Alumno>{
+	private String nombre;
+	private int notafinal;
+	private int edad;
+	
+	public Alumno(String nomb, int e, int nota){
+		nombre=nomb;
+		edad=e;
+		notafinal=nota;
+	}
+
+	@Override
+	public int compareTo(Alumno o) {
+		return edad-o.getEdad();
+	}
+	
+	public int getEdad(){
+		return edad;
+	}
+	
+	
+
+}

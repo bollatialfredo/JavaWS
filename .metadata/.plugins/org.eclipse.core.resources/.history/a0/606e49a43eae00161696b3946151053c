@@ -1,0 +1,10 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class IteradorAscendente extends IteradorNodo{
+	
+	public IteradorAscendente(Nodo no){
+		lista = new ArrayList<Comparable>();
+		lista.addAll(no.getValores());
+	}
+}

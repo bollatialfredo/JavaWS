@@ -1,5 +1,0 @@
-import java.util.Comparator;
-public class ComparadorPorAutor implements Comparator<Libro> {
-	public int compare(Li)
-
-}

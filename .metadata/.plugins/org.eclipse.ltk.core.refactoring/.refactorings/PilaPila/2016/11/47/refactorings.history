@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename field &apos;nombreDeUnaLista&apos; in &apos;Pila&apos; to &apos;lista&apos;&#x0D;&#x0A;- Original project: &apos;PilaPila&apos;&#x0D;&#x0A;- Original element: &apos;Pila.nombreDeUnaLista&apos;&#x0D;&#x0A;- Renamed element: &apos;Pila.lista&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" delegate="false" deprecate="false" description="Rename field &apos;nombreDeUnaLista&apos;" flags="589826" getter="false" id="org.eclipse.jdt.ui.rename.field" input="/src&lt;{Pila.java[Pila^nombreDeUnaLista" name="lista" references="true" setter="false" stamp="1479557663184" textual="false" version="1.0"/>
+</session>

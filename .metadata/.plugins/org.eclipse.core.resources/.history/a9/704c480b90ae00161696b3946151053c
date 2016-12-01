@@ -1,0 +1,16 @@
+
+
+public class Alumno implements Comparable{
+	private String nombre;
+	private int notafinal;
+	private int edad;
+	
+	public Alumno(String nomb, int e, int nota){
+		nombre=nomb;
+		edad=e;
+		notafinal=nota;
+	}
+	
+	
+
+}

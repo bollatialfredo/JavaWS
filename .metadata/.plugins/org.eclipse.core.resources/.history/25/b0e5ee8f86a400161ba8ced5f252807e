@@ -1,9 +1,0 @@
-
-public class RecursoCompartido extends Recurso {
-
-	@Override
-	public boolean esPosibleAgregar() {
-		return true;
-	}
-
-}

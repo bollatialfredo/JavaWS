@@ -1,0 +1,21 @@
+import java.util.Iterator;
+
+public class IteradorNodo implements Iterator {
+
+	
+	public IteradorNodo(Nodo n){
+		
+	}
+	@Override
+	public boolean hasNext() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public Object next() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

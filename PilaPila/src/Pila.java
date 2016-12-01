@@ -4,43 +4,49 @@ import java.util.List;
 
 public class Pila {
 
-	private List<Object> nombreDeUnaLista = new ArrayList<Object>();
+	private List<Object> lista;
+	
+	public Pila(){
+		lista = new ArrayList<Object>();
+	}
+	public Pila(List l){
+		lista = new ArrayList<Object>(l);
+	}
+	
 	
 	public Object top(){
 		
-			return nombreDeUnaLista.get(nombreDeUnaLista.size()-1);
+			return lista.get(lista.size()-1);
 		
 	}
 	public Object pop(){
 		Object o = top();
-		nombreDeUnaLista.remove(top());
+		lista.remove(top());
 		return o;
 	}
 	
 	public void push(Object o){
-		nombreDeUnaLista.add(o);
+		lista.add(o);
+	}
+	private void reverseOrder(){
+		Collections.reverse(lista);
 	}
 	
 	public Pila reverse(){
-		Pila aux = new Pila();
-		List<Object> aux2 = new ArrayList<Object>();
-		aux2=nombreDeUnaLista;
-		Collections.reverse(aux2);
-		for (Object o : aux2) {
-			aux.push(o);
-		}
+		Pila aux = new Pila(lista);
+		aux.reverseOrder();
 		return aux;
 	}
 	public Pila copy(){
 		Pila aux = new Pila();
-		for (Object o : nombreDeUnaLista) {
+		for (Object o : lista) {
 			aux.push(o);
 		}
 		return aux;
 	}
 	
 	public int size(){
-		return nombreDeUnaLista.size();
+		return lista.size();
 	}
 	
 	public static void main(String[] args) {
@@ -50,8 +56,9 @@ public class Pila {
 		p.push("Deivid");
 		p.push(23);
 		p.push(true);
-		p = p.reverse();
+		Pila p2 = p.reverse();
 		p.pop();
+		System.out.println(p2.top().toString());
 		System.out.println(p.top().toString());
 	}
 }

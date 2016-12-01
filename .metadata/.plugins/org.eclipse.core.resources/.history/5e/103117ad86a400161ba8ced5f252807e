@@ -1,9 +1,0 @@
-
-public abstract class Recurso {
-	String nombre;
-	
-	
-	public abstract boolean esPosibleAgregar(ELMTarea t);
-	
-	
-}

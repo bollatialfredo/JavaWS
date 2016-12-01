@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;ParcialitoNicolas/src/IteradorNodoMenorMay.java&apos; to &apos;IteradorNodoMayorMenor.java&apos;" description="Rename resource &apos;IteradorNodoMenorMay.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/IteradorNodoMenorMay.java" name="IteradorNodoMayorMenor.java" stamp="1479578642283" updateReferences="true"/>
+</session>

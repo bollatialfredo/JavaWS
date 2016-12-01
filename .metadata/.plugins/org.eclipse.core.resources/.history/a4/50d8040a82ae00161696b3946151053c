@@ -1,0 +1,43 @@
+import java.util.Iterator;
+import java.util.*;
+
+public class IteradorNodoMenorMayor implements Iterator<Comparable>{
+	Vector<Comparable>valores;
+	int pos;
+	
+	public IteradorNodoMenorMayor(Nodo arbol){
+		pos=0;
+		valores=new Vector<Comparable>();
+		valores=this.getValores(arbol);
+		
+	}
+	
+	private Vector<Comparable> getValores(Nodo Arbol){
+		
+		Vector<Comparable> retorno=new Vector<Comparable>();
+		if(Arbol.izq!=null)
+			retorno.addAll(this.getValores(Arbol.izq));
+		retorno.add(Arbol.getValor());
+		if(Arbol.der!=null)
+			retorno.addAll(this.getValores(Arbol.der));
+		
+		return retorno;
+		
+	}
+	
+	public Vector<Comparable> getVector () {
+		return valores;
+	}
+	@Override
+	public boolean hasNext() {
+		return pos<this.valores.size();
+	}
+
+	@Override
+	public Comparable next() {
+		Comparable aux=this.valores.elementAt(pos);
+		pos++;
+		return aux;
+	}
+
+}

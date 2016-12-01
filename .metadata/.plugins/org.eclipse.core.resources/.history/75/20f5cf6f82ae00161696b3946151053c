@@ -1,0 +1,32 @@
+
+public class IteradorNodoMenorMay {
+	
+	import java.util.Iterator;
+	import java.util.*;
+
+	public class IteradorNodoMenorMayor extends IteradorNodos implements Iterator<Comparable>{
+		
+		
+		public IteradorNodoMenorMayor(Nodo arbol) {
+			super(arbol);
+			
+		}
+
+		public Vector<Comparable> getValores(Nodo Arbol){
+			
+			Vector<Comparable> retorno=new Vector<Comparable>();
+			if(Arbol.der!=null)
+				retorno.addAll(this.getValores(Arbol.der));
+			retorno.add(Arbol.getValor());
+			if(Arbol.izq!=null)
+				retorno.addAll(this.getValores(Arbol.izq));
+			
+			return retorno;
+			
+		}
+		
+		
+	}
+
+
+}

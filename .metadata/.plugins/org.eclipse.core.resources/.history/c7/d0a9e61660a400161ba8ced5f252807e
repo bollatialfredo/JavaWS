@@ -1,9 +1,0 @@
-
-public class EFS {
-	private String nombre;
-	
-	public EFS(String nomb){
-		nombre=nomb;
-	}
-
-}

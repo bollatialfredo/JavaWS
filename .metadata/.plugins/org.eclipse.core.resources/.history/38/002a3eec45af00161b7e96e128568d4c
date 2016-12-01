@@ -1,0 +1,19 @@
+
+public class Carta implements Comparable<Carta> {
+	private int valor;
+	
+	public Carta(int val){
+		valor=val;
+	}
+	
+	public int getValor(){
+		return valor;
+	}
+	
+
+	@Override
+	public int compareTo(Carta arg0) {
+		return valor-arg0.getValor();
+	}
+		
+	}
