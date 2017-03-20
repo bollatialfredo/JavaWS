@@ -1,0 +1,9 @@
+
+public class Lista {
+		Nodo primero;
+		
+	public Lista () {
+		primero = null;
+	}
+	
+}

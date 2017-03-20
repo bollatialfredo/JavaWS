@@ -1,0 +1,15 @@
+
+public class Sim {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Lista l1 = new Lista();
+		
+		l1.addNodo("Hola");
+		l1.addNodo("Chau");
+		
+		l1.imp();
+	}
+
+}

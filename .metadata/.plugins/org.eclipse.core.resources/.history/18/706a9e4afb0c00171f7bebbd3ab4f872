@@ -1,0 +1,30 @@
+
+public class Nodo {
+	String valor;	
+	Nodo sig;
+	
+	public Nodo (String v) {
+		valor = v;
+	}
+	
+	
+	/**
+	 * Get valor
+	 * @return
+	 */
+	public String getValor() {
+		return valor;
+	}
+	
+	/**
+	 * Set valor
+	 * @param v
+	 */
+	public void setValor (String v) {
+		valor = v;
+	}
+	
+	public void setSig(String n) {
+		sig = new Nodo(n);
+	}
+}

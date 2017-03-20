@@ -1,0 +1,14 @@
+
+public class Lista {
+		Nodo primero;
+		
+	public Lista () {
+		primero = null;
+	}
+	
+	public void addNodo (String n) {
+		Nodo tmp =  new Nodo(n);
+		tmp.setSig(primero);
+		primero = tmp;
+	}
+}

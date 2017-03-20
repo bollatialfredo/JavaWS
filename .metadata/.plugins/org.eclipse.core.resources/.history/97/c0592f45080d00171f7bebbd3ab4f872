@@ -1,0 +1,55 @@
+
+public class Lista {
+		Nodo primero;
+		int cantidad = 0;
+		
+	public Lista () {
+		primero = null;
+	}
+	
+	/**
+	 * Agrega un Nodo al principio de la lista
+	 * @param n
+	 */
+	public void addNodo (String n) {
+		Nodo tmp =  new Nodo(n);
+		tmp.setSig(primero);
+		primero = tmp;
+		cantidad++;
+	}
+	
+	public String getValorNodo (int pos) {
+		return "";
+	}
+	
+	public int getSize() {
+		return cantidad;
+	}
+	
+	public boolean isEmpty () {
+		return primero == null;
+	}
+	
+	public String toString(){
+		Nodo nodoActual = primero;
+		String s = "";
+		while (nodoActual != null) {
+			s += nodoActual.getValor();
+			s += " ";
+			nodoActual = nodoActual.getSig();
+		}
+		return s;
+	}
+	public String imprimirNodo(int pos){
+		String s = "";  
+		Nodo nodoActual = primero;
+		while (nodoActual != null) {
+			if (pos == 0) {
+				s = nodoActual.getValor();
+				return s;
+			}
+			pos --;
+		}
+		return s;
+	}
+}

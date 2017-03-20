@@ -1,0 +1,25 @@
+
+public class Lista {
+		Nodo primero;
+		
+	public Lista () {
+		primero = null;
+	}
+	
+	/**
+	 * Agrega un Nodo al final de la lista
+	 * @param n
+	 */
+	public void addNodo (String n) {
+		Nodo tmp =  new Nodo(n);
+		tmp.setSig(primero);
+		primero = tmp;
+	}
+	
+	public void imp () {
+		System.out.println(primero.getValor());
+		Nodo t = primero.getSig();
+		System.out.println(t.getValor());
+		
+	}
+}

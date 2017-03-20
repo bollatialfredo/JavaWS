@@ -1,0 +1,32 @@
+
+public class Lista {
+		Nodo primero;
+		int cantidad = 0;
+		
+	public Lista () {
+		primero = null;
+	}
+	
+	/**
+	 * Agrega un Nodo al principio de la lista
+	 * @param n
+	 */
+	public void addNodo (String n) {
+		Nodo tmp =  new Nodo(n);
+		tmp.setSig(primero);
+		primero = tmp;
+		cantidad++;
+	}
+	
+	public String getValorNodo (int pos) {
+		return "";
+	}
+	
+	public int getSize() {
+		return cantidad;
+	}
+	
+	public boolean isEmpty () {
+		return cantidad == 0;
+	}
+}

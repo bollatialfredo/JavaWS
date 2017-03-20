@@ -1,0 +1,23 @@
+
+public class Lista {
+		Nodo primero;
+		
+	public Lista () {
+		primero = null;
+	}
+	
+	/**
+	 * Agrega un Nodo al principio de la lista
+	 * @param n
+	 */
+	public void addNodo (String n) {
+		Nodo tmp =  new Nodo(n);
+		tmp.setSig(primero);
+		primero = tmp;
+	}
+	
+	public void addNodoEnd (String n ){
+		
+	}
+	
+}
