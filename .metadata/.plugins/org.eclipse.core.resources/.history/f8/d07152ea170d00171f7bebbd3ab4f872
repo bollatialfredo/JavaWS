@@ -1,0 +1,33 @@
+
+public class Sim {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Lista l1 = new Lista();
+		
+//		l1.addNodo("Hola");
+//		l1.addNodo("Chau");
+//		l1.addNodo("como");
+//		l1.addNodo("te");
+//		l1.addNodo("va");
+		
+//		System.out.println(l1.toString());
+//		System.out.println(l1.imprimirNodo(0));
+//		System.out.println(l1.deleteIndex(2));
+//		System.out.println(l1.toString());
+		
+		ListaArreglo l2 = new ListaArreglo();
+		
+		for (int i = 0; i < 500; i++) {
+			l1.addNodo("ks");
+//			l2.addElement("ks");
+		}
+		
+		long startTime = System.nanoTime();
+		//code
+		long endTime = System.nanoTime();
+		System.out.println("Took "+(endTime - startTime) + " ns"); 
+	}
+
+}

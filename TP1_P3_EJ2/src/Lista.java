@@ -34,6 +34,7 @@ public class Lista {
 		return primero == null;
 	}
 	
+	@Override
 	/**
 	 * Recorre la lista vinculada e imprime cada valor en cada posicion
 	 */
@@ -110,6 +111,21 @@ public class Lista {
 			nodoActual = nodoActual.getSig();
 		}
 		return s;
+	}
+	
+	public boolean containsValue (String s) {
+		Nodo nodoActual = primero;
+		
+		while(nodoActual != null) {
+			if (nodoActual.getValor() == s) {
+				return true;
+			}
+			else {
+				nodoActual = nodoActual.getSig();
+			}
+		}
+		
+		return false;
 	}
 	
 }
