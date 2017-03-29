@@ -1,0 +1,41 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class ArbolBinario {
+	NodoBinario raiz;
+	
+	public ArbolBinario () {
+		raiz = null;
+	}
+	
+	public void addNodoBinario(int v) {
+		if(raiz == null) {
+			raiz = new NodoBinario(v);
+		}
+		else {
+			raiz.addNodo(v);
+		}
+	}
+	
+	public List getValoresPreOrden(){
+		List aux = new ArrayList();
+		aux.add(raiz.getValor());
+		aux.addAll(printPreOrden(raiz));
+		return aux;
+	}
+	
+	private List printPreOrden(NodoBinario n){
+		List aux = new ArrayList();
+		if (n.getIzq() != null) {
+			aux.addAll(printPreOrden(n.getIzq()));
+		}else{
+			aux.add(n.getValor());
+		}
+		if (n.getDer() != null) {
+			aux.addAll(printPreOrden(n.getDer()));
+		}else{
+			aux.add(n.getValor());
+		}
+		return aux;
+	}
+}

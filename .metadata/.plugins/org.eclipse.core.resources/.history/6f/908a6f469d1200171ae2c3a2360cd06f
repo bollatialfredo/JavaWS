@@ -1,0 +1,17 @@
+
+public class ArbolBinario {
+	NodoBinario raiz;
+	
+	public ArbolBinario () {
+		raiz = null;
+	}
+	
+	public void addNodoBinario(int v) {
+		if(raiz == null) {
+			raiz = new NodoBinario(v);
+		}
+		else {
+			raiz.addNodo(v);
+		}
+	}
+}

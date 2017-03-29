@@ -1,0 +1,12 @@
+
+public class ArbolBinario {
+	NodoBinario raiz;
+	
+	public ArbolBinario () {
+		raiz = null;
+	}
+	
+	public void addNodoBinario() {
+		
+	}
+}

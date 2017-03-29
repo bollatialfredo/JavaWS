@@ -1,0 +1,14 @@
+
+public class ArbolBinario {
+	private int valor;
+	ArbolBinario izq;
+	ArbolBinario der;
+	
+	public ArbolBinario (int v) {
+		valor = v;
+	}
+	
+	public addArbolBinario() {
+		
+	}
+}

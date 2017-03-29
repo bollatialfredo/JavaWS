@@ -1,0 +1,29 @@
+public class Sim {
+	
+	//**********************Main*****************************************
+		public static void main(String[] args) {
+			Ordenamiento1 ord = new Ordenamiento1();
+			System.out.println("Arreglo");
+			System.out.println(ord.imprimirArr());
+			System.out.println(ord.comprobarArregloDes());
+			System.out.println(ord.contieneElementoArrOdenadoAsc(4));
+			
+			Ordenamiento2 lista = new Ordenamiento2();
+			
+			lista.addNodo(25);
+			lista.addNodo(13);
+			lista.addNodo(14);
+			lista.addNodo(15);
+			lista.addNodo(16);
+			lista.addNodo(17);
+			System.out.println();
+			System.out.println("Lista Vinculada");
+			System.out.println(lista.toString());
+			System.out.println(lista.getOrdenadaDes());
+			System.out.println(lista.buscarElemento(25));
+			
+			BurbujeoSeleccion burbujeo = new BurbujeoSeleccion();
+			
+		}
+
+}

@@ -1,0 +1,14 @@
+
+public class NodoBinario {
+	private int valor;
+	NodoBinario izq;
+	NodoBinario der;
+	
+	public NodoBinario(int v) {
+		valor = v;
+	}
+	
+	public void addNodo(int v) {
+		
+	}
+}

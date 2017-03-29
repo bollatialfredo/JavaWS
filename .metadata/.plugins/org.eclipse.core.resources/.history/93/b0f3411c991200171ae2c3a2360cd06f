@@ -1,0 +1,31 @@
+
+public class NodoBinario {
+	private int valor;
+	NodoBinario izq;
+	NodoBinario der;
+	
+	public NodoBinario(int v) {
+		valor = v;
+		izq = null;
+		der = null;
+	}
+	
+	public void addNodo(int v) {
+		if(v <= valor) {
+			if(izq == null) {
+				izq.addNodo(v);		
+			}
+			else {
+				izq.addNodo(v);
+			}
+		}
+		else {
+			if(der == null) {
+				der.addNodo(v);		
+			}
+			else {
+				der.addNodo(v);
+			}
+		}
+	}
+}
